@@ -1,7 +1,7 @@
 public class ProjectCalloutService {
 	
     @InvocableMethod
-    public static void PostOpportunityToPMS(List<Id> opportunities) {
+    public static void postOpportunityToPMS(List<Id> opportunities) {
         Opportunity opportunity = [SELECT Id, Name, Account.Name, CloseDate, Amount, StageName
                                     FROM Opportunity WHERE Id = :opportunities[0]];
         System.enqueueJob(new QueueablePMSCall(opportunity));
