@@ -1,6 +1,4 @@
-public class ProjectCalloutServiceMockFailure {
-   
-   public ProjectCalloutServiceMockFailure() { }
+public class ProjectCalloutServiceMockFailure implements HttpCalloutMock {
 
    public HttpResponse respond(HttpRequest request) {
       HttpResponse response = new HttpResponse();

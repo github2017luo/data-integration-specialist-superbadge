@@ -1,6 +1,4 @@
-public class ProjectCalloutServiceMock {
-
-   public ProjectCalloutServiceMock() { }
+public class ProjectCalloutServiceMock implements HttpCalloutMock {
 
    public HttpResponse respond(HttpRequest request) {
       HttpResponse response = new HttpResponse();
