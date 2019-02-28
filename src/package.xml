@@ -5,6 +5,7 @@
         <members>BillingCalloutServiceMock</members>
         <members>BillingCalloutServiceMockFailure</members>
         <members>BillingCalloutServiceTest</members>
+        <members>BillingServiceProxy</members>
         <members>ProjectCalloutService</members>
         <members>ProjectCalloutServiceMock</members>
         <members>ProjectCalloutServiceMockFailure</members>
