@@ -1,3 +1,5 @@
-trigger ProjectTrigger on Project__c (after update) {
-    //Call the Billing Service callout logic here
+trigger ProjectTrigger on Project__c (before update) {
+    if(Trigger.isBefore && Trigger.isUpdate) {
+        BillingCalloutService.callBillingService(Trigger.oldMap, Trigger.newMap);
+    }
 }
