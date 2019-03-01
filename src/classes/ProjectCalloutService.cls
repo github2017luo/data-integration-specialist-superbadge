@@ -18,7 +18,7 @@ public class ProjectCalloutService {
                     + '"opportunityName": "' + this.opportunity.Name + '",'
                     + '"accountName": "' + this.opportunity.Account.Name + '",'
                     + '"closeDate": "' + this.opportunity.CloseDate + '",'
-                    + '"amount": ' + this.opportunity.amount + '}';
+                    + '"amount": ' + this.opportunity.Amount + '}';
         }
 
         private QueueablePMSCall(Opportunity opportunity) {
