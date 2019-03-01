@@ -24,6 +24,7 @@ public class BillingCalloutService {
 
         if(response == 'OK') {
             project.Status__c = 'Billed';
+            update project;
         }
     }
 
